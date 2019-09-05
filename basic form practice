@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Register</title>
+</head>
+
+<body>
+	<h1>Register Form</h1>
+	
+	<form>
+		<fieldset disabled>
+			<label for "firstname"> First Name: </label>
+			<input id = "firstname" name = "firstname" type = "text" placeholder = "Chu" required>
+			<label for "lastname"> Last Name: </label>
+			<input id = "lastname" name = "lastname" type = "text" placeholder = "Ko" required>
+		</fieldset>	
+		</br>
+		
+		<label for "male"> Male <label>
+		<input id = "male" name = "choice" value = "male" type = "radio" required>
+		<label for "female"> Female <label>
+		<input id = "female" name = "choice" value = "female" type = "radio" required>
+		<label for "other"> Other <label>
+		<input id = "other" name = "choice" value = "other" type = "radio" required>
+		</br>
+
+		<label for "email"> Email: </label>
+		<input id = "email" name = "email" type = "email" placeholder = "your email" required>
+		<label for "password"> Password: </label>
+		<input id = "password" name = "password" type = "password" placeholder = "your password" pattern = ".{5,10}" required title = "5~10">
+		</br>
+		<fieldset>
+		<legend> Birthday </legend>
+			<label for month>
+				<select id = "month" name = "month">
+						<option>month</option>
+						<option>Jan</option> <option>Feb</option> <option>Mar</option> <option>Apr</option>
+						<option>May</option> <option>Jun</option> <option>Jul</option> <option>Aug</option>
+						<option>Sep</option> <option>Oct</option> <option>Nov</option> <option>Dec</option>
+				</select>
+				<select id = "day" name = "day">
+						<option>day</option>
+						<option>1</option> <option>2</option> <option>3</option> <option>4</option>
+						<option>5</option> <option>6</option> <option>7</option> <option>8</option>
+				</select>
+				<select id = "year" name = "year">
+						<option>year</option> <option>1991</option> <option>1992</option> <option>1993</option>
+				</select>
+			</label>
+		</fieldset>
+
+		</br>
+		
+		<label for "condition"> I agree to the terms and conditions </label>
+		<input id = "condition" type = "checkbox" required>
+		</br>
+		
+		<input type = "submit">
+	</form>
+
+
+
+</body>
+</html>
+
