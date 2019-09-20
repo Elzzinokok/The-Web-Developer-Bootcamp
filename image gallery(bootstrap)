@@ -1,0 +1,118 @@
+# The-Web-Developer-Bootcamp
+The Web Developer Bootcamp - practices
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Image Gallery</title>
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- <link rel = "stylesheet" type = "text/css" href = "app.css">	 -->
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<!-- Javascript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	
+	<style>
+		body{
+			padding-top: 70px;
+		}
+		<!-- .image{ -->
+			<!-- width: 100%; -->
+			<!-- height: 500px; -->
+			<!-- background-size: cover; -->
+			<!-- background-position: center; -->
+		}
+		.jumbotron{
+			color: #2c3e50;
+			background: #ecf0f1;
+		}
+		.navbar-inverse{
+			background: #2c3e50;
+		}
+		.navbar-inverse .navbar-nav>li>a{
+			color: white;
+		}
+		.navbar-inverse .navbar-brand{
+			color: white;
+		}
+		.flex {
+			display: flex;
+			flex-wrap: wrap;
+		}
+	</style>
+	
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#target1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> KOKO's Gallery</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="target1">
+				<ul class="nav navbar-nav">
+					<li><a href="#">About Me</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+				
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Sign Up</a></li>
+					<li><a href="#">Login</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+	<div class = "container">
+		<div class = "jumbotron">
+			<h1><i class="fas fa-camera-retro"></i> The Image Gallery</h1>
+			<p>this is my photo gallery</p>
+		</div>
+		<div class = "row flex">
+			<div class = "col-md-4 col-sm-6">
+				<div class = "thumbnail image">
+					<img src = "https://images.unsplash.com/photo-1568844590215-b7d899a731b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+				</div>
+			</div>
+			<div class = "col-md-4 col-sm-6">
+				<div class = "thumbnail image">
+					<img src = "https://images.unsplash.com/photo-1568887427190-caa8a63374cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60">
+				</div>
+			</div>
+			<div class = "col-md-4 col-sm-6">
+				<div class = "thumbnail image">
+					<img src = "https://images.unsplash.com/photo-1568884149074-a93f17583719?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60">
+				</div>
+			</div>
+			<div class = "col-md-4 col-sm-6">
+				<div class = "thumbnail image">
+					<img src = "https://images.unsplash.com/photo-1568884385230-2a069bcc0258?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60">
+				</div>
+			</div>
+			<div class = "col-md-4 col-sm-6">
+				<div class = "thumbnail image">
+					<img src = "https://images.unsplash.com/photo-1568855304073-913eaee03404?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+				</div>
+			</div>
+			<div class = "col-md-4 col-sm-6">
+				<div class = "thumbnail image">
+					<img src = "https://images.unsplash.com/photo-1568813756745-f2d0cbe5972e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
